@@ -8,6 +8,11 @@
 
 body {
     background-image: linear-gradient(#16262e 7%, #3a4851);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    box-sizing: border-box;
 }
 
 header {
@@ -66,13 +71,13 @@ nav .nav-menu li a:hover {
     border: 1px solid;       /* Tilføjer en kant rundt om søgefeltet */
     outline: none;                /* Fjern den blå kant ved fokus */
     border-radius: 5px;
-    color: #fff;
-    background-color: #3a4851;
+    color: black;
+    background-color: #fff;
     font-size: 0.8rem;
 }
 
 #search::placeholder {
-    color: #fff;                  /* Ændrer farven på placeholder-teksten til hvid */
+    color: black;                  /* Ændrer farven på placeholder-teksten til hvid */
 }
 
 .search-btn {
@@ -84,8 +89,8 @@ nav .nav-menu li a:hover {
 }
 
 .search-icon {
-    width: 20px;                  /* Juster størrelsen på ikonet */
-    height: 20px;
+    width: 15px;                  /* Juster størrelsen på ikonet */
+    height: 15px;
 }
 
 .container-box {
@@ -154,3 +159,117 @@ nav .nav-menu li a:hover {
     box-shadow: 0 4px 16px #0cf;
     margin-top: -150px;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    height: 100%;
+    margin-top: 50px;
+    clear: both;
+  }
+  
+  .footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-left .logo img {
+    width: 120px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  
+  .contact-info p{
+    margin: 5px 0;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    margin-top: -4px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centrerer elementerne horisontalt */
+    justify-content: center; /* Centrerer elementerne vertikalt */
+    text-align: center;  /* Sikrer at teksten også er centreret */
+    width: 100%;         /* Sørger for at containeren fylder hele bredden */
+  }
+
+  .newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 2.5px;
+    text-align: center;
+  }
+  
+  .newsletter input {
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    color: black !important;
+    background-color: #fff;
+    border: 1px solid;
+    box-sizing: border-box;
+  }
+  
+  .newsletter button {
+    padding: 8px 20px;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    transition: background-color 0.3s ease;
+    border: 1px solid;
+    box-sizing: border-box;
+  }
+  
+  .newsletter button:hover {
+    background-color: #fff;
+    color: #0cf;
+  }
+  
+  .footer-right h4 {
+    font-size: 18px;
+    position: relative;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .social-icon img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover img {
+    transform: scale(1.2);
+  }
