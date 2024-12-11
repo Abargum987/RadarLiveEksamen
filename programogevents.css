@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bold;
+}
+
+body {
+    background-image: linear-gradient(#16262e 7%, #3a4851);
+}
+
+header {
+    width: 100%;
+    padding: 1rem 0;          /* Giver lidt luft omkring logoet */
+    display: flex;
+    justify-content: center;  /* Centrerer logoet horisontalt */
+    align-items: center;      /* Centrerer logoet vertikalt inden for headeren */
+    position: absolute;       /* Placerer headeren øverst i containeren */
+    top: 0;                   /* Fastgør headeren til toppen */
+    left: 0;
+    z-index: 30;              /* Sørger for, at logoet er over videoen */
+    flex-direction: column;
+}
+
+.logo {
+    height: 50px;             /* Justér højden efter behov */
+    width: auto;              /* Bevarer logoets proportioner */
+    margin-bottom: 2rem;
+}
+
+nav .nav-menu {
+    list-style: none;            /* Fjerner punktopstilling */
+    padding: 0;
+    display: flex;               /* Viser menupunkterne på én linje */
+    gap: 18rem;                 /* Afstand mellem menupunkterne */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav .nav-menu li a {
+    color: #fff;
+    text-decoration: none;       /* Fjerner understregning */
+    font-size: 1rem;
+    text-transform: uppercase;   /* Gør teksten til store bogstaver */
+    transition: color 0.3s;      /* Gør farveskift glidende ved hover */
+}
+
+nav .nav-menu li a:hover {
+    color: #0cf;              /* Ændrer farve ved hover (justér farven efter behov) */
+}
+
+.search-container {
+    margin-top: 2rem;             /* Afstand mellem menuen og søgefeltet */
+    display: flex;
+    align-items: center;
+    position: relative;           /* For at placere søgeikonet i forhold til input */
+    justify-content: flex-start;
+    margin-right: 77.6%;
+}
+
+#search {
+    width: 230px;                 /* Justér bredden på søgefeltet */
+    padding: 0.5rem 2rem 0.5rem 1rem;  /* Placerer lidt ekstra plads til højre for ikonet */
+    font-size: 1rem;
+    border: 1px solid;       /* Tilføjer en kant rundt om søgefeltet */
+    outline: none;                /* Fjern den blå kant ved fokus */
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3a4851;
+    font-size: 0.8rem;
+}
+
+#search::placeholder {
+    color: #fff;                  /* Ændrer farven på placeholder-teksten til hvid */
+}
+
+.search-btn {
+    position: absolute;
+    right: 0.5rem;                /* Placerer knappen tæt på højre kant af inputfeltet */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 20px;                  /* Juster størrelsen på ikonet */
+    height: 20px;
+}
+
+.event-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.event-container h1.overskrift {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    color: #0cf;
+    margin-top: 200px;
+}
+
+.event {
+    display: flex;
+    box-shadow: 0 4px 16px -8px #0cf;
+    display: flex;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.event .event-date {
+    padding: 10px;
+    background-color: #3a4851;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    height: 65px;
+    width: 65px;
+    margin-left: -55px;
+    justify-content: space-between;
+    position: relative;
+    left: 24%;
+    top: 23px;
+
+    /* flexbox til centrere indholdet */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.event-date .date {
+    font-size: 25px;
+    color: #0cf;
+}
+
+.event-date .month {
+    font-size: 10px;
+    font-weight: normal;
+    color: #0cf;
+    margin-left: 5px;
+}
+
+.event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    flex: 1;
+}
+
+.event .event-right h3.event-title {
+    font-size: 16px;
+    margin: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 200px;
+}
+
+.event .event-right .event-time {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 16px;
+    margin: 20px -12px 0;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 189px;
+}
+
+.event-time img:last-of-type {
+    margin-left: 8px; /* Skaber mellemrum mellem tekst og urikonet */
+}
+
+
+.event .event-right .event-time img {
+    height: 20px;
+    padding-right: 8px;
+    margin-right: -5px;
+}
+
+.køb{
+    margin-left: 900px;
+    margin-bottom: 45px;
+    margin-top: -60px;
+}
+
+.billetter{
+    padding: 6px 45px;
+    background-color: #3a4851;
+    color: #0cf;
+    font-size: 12px;
+    border: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.billetter:hover{
+    background-color: #fff;
+}
+
+.gbillede{
+    width: 11%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute;
+    left: 11.5%;
+    margin-top: -4px;
+    
+}
+
+.event-container2 {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.event-container2 h1.overskrift2 {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    color: #0cf;
+    margin-top: 200px;
+}
+
+.event2 {
+    display: flex;
+    box-shadow: 0 4px 16px -8px #0cf;
+    display: flex;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.event2 .event-date2 {
+    padding: 10px;
+    background-color: #3a4851;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    height: 65px;
+    width: 65px;
+    margin-left: -55px;
+    justify-content: space-between;
+    position: relative;
+    left: 24%;
+    top: 23px;
+
+    /* flexbox til centrere indholdet */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.event-date2 .date2 {
+    font-size: 25px;
+    color: #0cf;
+}
+
+.event-date2 .month2 {
+    font-size: 10px;
+    font-weight: normal;
+    color: #0cf;
+    margin-left: 5px;
+}
+
+.event2 .event-right2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    flex: 1;
+}
+
+.event2 .event-right2 h3.event-title2 {
+    font-size: 16px;
+    margin: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 200px;
+}
+
+.event2 .event-right2 .event-time2 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 16px;
+    margin: 20px -12px 0;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 189px;
+}
+
+.event-time2 img:last-of-type {
+    margin-left: 8px; /* Skaber mellemrum mellem tekst og urikonet */
+}
+
+
+.event2 .event-right2 .event-time2 img {
+    height: 20px;
+    padding-right: 8px;
+    margin-right: -5px;
+}
+
+.køb2{
+    margin-left: 900px;
+    margin-bottom: 45px;
+    margin-top: -60px;
+}
+
+.billetter2{
+    padding: 6px 45px;
+    background-color: #3a4851;
+    color: #0cf;
+    font-size: 12px;
+    border: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.billetter2:hover{
+    background-color: #fff;
+}
+
+.gbillede2{
+    width: 11%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute;
+    left: 11.5%;
+    margin-top: -4px;
+}

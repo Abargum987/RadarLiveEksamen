@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    padding: 1rem 0;          /* Giver lidt luft omkring logoet */
+    display: flex;
+    justify-content: center;  /* Centrerer logoet horisontalt */
+    align-items: center;      /* Centrerer logoet vertikalt inden for headeren */
+    position: absolute;       /* Placerer headeren øverst i containeren */
+    top: 0;                   /* Fastgør headeren til toppen */
+    left: 0;
+    z-index: 30;              /* Sørger for, at logoet er over videoen */
+    flex-direction: column;
+}
+
+.logo {
+    height: 50px;             /* Justér højden efter behov */
+    width: auto;              /* Bevarer logoets proportioner */
+    margin-bottom: 2rem;
+}
+
+nav .nav-menu {
+    list-style: none;            /* Fjerner punktopstilling */
+    padding: 0;
+    display: flex;               /* Viser menupunkterne på én linje */
+    gap: 18rem;                 /* Afstand mellem menupunkterne */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav .nav-menu li a {
+    color: #fff;
+    text-decoration: none;       /* Fjerner understregning */
+    font-size: 1rem;
+    text-transform: uppercase;   /* Gør teksten til store bogstaver */
+    transition: color 0.3s;      /* Gør farveskift glidende ved hover */
+}
+
+nav .nav-menu li a:hover {
+    color: #0cf;              /* Ændrer farve ved hover (justér farven efter behov) */
+}
+
+.search-container {
+    margin-top: 2rem;             /* Afstand mellem menuen og søgefeltet */
+    display: flex;
+    align-items: center;
+    position: relative;           /* For at placere søgeikonet i forhold til input */
+    justify-content: flex-start;
+    margin-right: 77.7%;
+}
+
+#search {
+    width: 230px;                 /* Justér bredden på søgefeltet */
+    padding: 0.5rem 2rem 0.5rem 1rem;  /* Placerer lidt ekstra plads til højre for ikonet */
+    font-size: 1rem;
+    border: 1px solid;       /* Tilføjer en kant rundt om søgefeltet */
+    outline: none;                /* Fjern den blå kant ved fokus */
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3a4851;
+    font-size: 0.8rem;
+}
+
+#search::placeholder {
+    color: #fff;                  /* Ændrer farven på placeholder-teksten til hvid */
+}
+
+.search-btn {
+    position: absolute;
+    right: 0.5rem;                /* Placerer knappen tæt på højre kant af inputfeltet */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 20px;                  /* Juster størrelsen på ikonet */
+    height: 20px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+@media (min-aspect-ratio:16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.uppercase{
+    text-transform: uppercase;
+    color: #fff;
+    top: 39%;
+    position: absolute;
+    font-size: 3rem;
+}
+
+.container h2{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    z-index: 20;
+    color: #fff;
+    margin-top: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 45%;
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    background-color: transparent; /* Gør footeren gennemsigtig */
+    padding: 2rem;
+    color: #fff; /* Farven på teksten */
+    text-align: center;
+    position: relative; /* Sørg for at positionere footer korrekt i forhold til andre elementer */
+    z-index: 10; /* Sørg for at footer ligger over baggrunden */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.newsletter-container {
+    width: 100%;
+    max-width: 600px; /* Begrænser bredden på formularen */
+    margin: 32rem auto 0;
+}
+
+.newsletter-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem; /* Afstand mellem overskriften og inputfeltet */
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #fff;
+    position: absolute;
+    top: 76%;
+    left: 22%;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#newsletter-email {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff; /* Hvid baggrund for inputfeltet */
+}
+
+.subscribe-btn {
+    padding: 0.75rem;
+    background-color: #fff; /* Hvid baggrund for knappen */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.subscribe-btn:hover {
+    background-color: #0cf; /* Farveændring på hover */
+}

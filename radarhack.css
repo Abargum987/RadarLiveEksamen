@@ -1,0 +1,69 @@
+.event-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.event-container h1.overskrift {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #0cf;
+}
+
+.event-container .event {
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.event .event-left {
+    background: #3a4851;
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #16262e;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+}
+
+.event .event-left .date {
+    font-size: 56px;
+}
+
+.event .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 47px;
+}
+
+.event .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.event .event-right .event-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+}
+
+.event .event-right .event-time img {
+    height: 20px;
+    padding-right: 8px;
+}
