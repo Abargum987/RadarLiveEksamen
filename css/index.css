@@ -147,8 +147,7 @@ nav .nav-menu li a:hover {
     background-color: transparent;
     color: white;
     position: relative;
-    height: 100px;
-    margin-top: -120px;
+    height: 100%;
     clear: both;
   }
   
@@ -180,7 +179,9 @@ nav .nav-menu li a:hover {
     justify-content: center; /* Centrerer elementerne vertikalt */
     text-align: center;  /* Sikrer at teksten også er centreret */
     width: 100%;         /* Sørger for at containeren fylder hele bredden */
-  }
+    position: relative;
+    margin-left: 50px;
+}
 
   .newsletter h3 {
     font-size: 18px;

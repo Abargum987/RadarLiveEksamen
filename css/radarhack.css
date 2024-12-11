@@ -201,6 +201,8 @@ nav .nav-menu li a:hover {
     justify-content: center; /* Centrerer elementerne vertikalt */
     text-align: center;  /* Sikrer at teksten også er centreret */
     width: 100%;         /* Sørger for at containeren fylder hele bredden */
+    position: relative;
+    margin-left: 50px;
   }
 
   .newsletter h3 {
