@@ -91,6 +91,13 @@ nav .nav-menu li a:hover {
 .event-container {
     max-width: 1250px;
     margin: 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s; /* giver glidende effekt */
+    transform-origin: center;
+    will-change: transform;
+}
+
+.event-container:hover{
+    transform: scale(1.02); /*gør boksen lidt større */
 }
 
 .event-container h1.overskrift {
@@ -178,6 +185,7 @@ nav .nav-menu li a:hover {
     height: 20px;
     padding-right: 8px;
     margin-right: -5px;
+    transform-origin: center;
 }
 
 .køb{
@@ -206,9 +214,8 @@ nav .nav-menu li a:hover {
     object-fit: cover;
     border-radius: 5px;
     position: absolute;
-    left: 11.5%;
+    left: 5%;
     margin-top: -4px;
-    
 }
 
 .event-container2 {
