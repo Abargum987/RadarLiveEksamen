@@ -140,116 +140,117 @@ nav .nav-menu li a:hover {
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: transparent;
-    color: white;
-    position: relative;
-    height: 100%;
-    clear: both;
-  }
-  
-  .footer-left, .footer-right {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-left .logo img {
-    width: 120px;
-    margin-bottom: 10px;
-    margin-left: 15px;
-  }
-  
-  .contact-info p{
-    margin: 5px 0;
-    font-size: 14px;
-    position: relative;
-    text-align: center;
-    margin-top: -4px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-  }
-  
-  .newsletter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* Centrerer elementerne horisontalt */
-    justify-content: center; /* Centrerer elementerne vertikalt */
-    text-align: center;  /* Sikrer at teksten også er centreret */
-    width: 100%;         /* Sørger for at containeren fylder hele bredden */
-    position: relative;
-    margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
 }
 
-  .newsletter h3 {
-    font-size: 18px;
-    margin-bottom: 2.5px;
-    text-align: center;
-  }
-  
-  .newsletter input {
-    padding: 8px;
-    font-size: 14px;
-    width: 200px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 300px;
-    color: black !important;
-    background-color: #fff;
-    border: 1px solid;
-    box-sizing: border-box;
-  }
-  
-  .newsletter button {
-    padding: 8px 20px;
-    background-color: #fff;
-    color: black;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    max-width: 300px;
-    transition: background-color 0.3s ease;
-    border: 1px solid;
-    box-sizing: border-box;
-  }
-  
-  .newsletter button:hover {
-    background-color: #fff;
-    color: #0cf;
-  }
-  
-  .footer-right h4 {
-    font-size: 18px;
-    position: relative;
-    margin: 0;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .social-media-icons {
-    display: flex;
-    gap: 25px;
-  }
-  
-  .social-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-  }
-  
-  .social-icon img {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-icon:hover img {
-    transform: scale(1.2);
-  }
+.footer-left, .footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left .logo img {
+  width: 120px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.contact-info p{
+  margin: 5px 0;
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  margin-top: -4px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centrerer elementerne horisontalt */
+  justify-content: center; /* Centrerer elementerne vertikalt */
+  text-align: center;  /* Sikrer at teksten også er centreret */
+  width: 100%;         /* Sørger for at containeren fylder hele bredden */
+  position: relative;
+  margin-left: 50px;
+}
+
+.newsletter h3 {
+  font-size: 18px;
+  margin-bottom: 2.5px;
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 8px;
+  font-size: 14px;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  color: black !important;
+  background-color: #fff;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.newsletter button {
+  padding: 8px 20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s ease;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.newsletter button:hover {
+  background-color: #fff;
+  color: #0cf;
+}
+
+.footer-right h4 {
+  font-size: 18px;
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.2);
+}

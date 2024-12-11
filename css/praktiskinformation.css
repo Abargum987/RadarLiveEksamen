@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(#16262e 7%, #3a4851);
+    background-image: linear-gradient(#3a4851 2%,#16262e);
     height: 100%;
     margin: 0;
     padding: 0;
@@ -114,9 +114,9 @@ nav .nav-menu li a:hover {
     border: 1px solid #fff;
     border-radius: 5px;
     overflow: hidden; /* Sørger for, at billedet ikke går udenfor boksen */
-    min-height: 200px; /* Højde på boksen */
+    min-height: 250px; /* Højde på boksen */
     width: 90%;
-    max-height: 70px;
+    max-height: 100px;
     background-color: #16262e;
     box-shadow: 0 4px 16px -8px #0cf;
   }
@@ -141,12 +141,23 @@ nav .nav-menu li a:hover {
   }
   
   .box-content h2 {
-    margin-bottom: 10px;
+    margin-bottom: -145px;
     font-size: 1.5rem;
-    color: #3a4851;
+    color: #0cf;
+    text-align: center;
+    margin-top: -50px;
   }
   
   .box-content p {
     font-size: 1rem;
-    color: #555;
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+    padding: 5px;
+    border: 0px solid #fff;
+    display: inline-block;
+    max-width: 75%;
+    align-items: center;
+    margin-left: 130px;
+    line-height: 1.5;
   }
