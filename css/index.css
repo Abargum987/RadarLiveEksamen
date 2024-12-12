@@ -20,8 +20,18 @@ header {
 }
 
 .burger-menu {
-  background-color: transparent;
   display: none;
+  cursor: pointer;
+}
+
+.burger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
 }
 
 .logo {
@@ -261,23 +271,79 @@ nav .nav-menu li a:hover {
 
 /* Mobil Iphone 12 Resonsive */
 /* header */
-@media (max-width: 390px) {
+@media screen and (max-width: 768px) {
   
   .header{
     padding: 0.5rem;
   }
-  nav .nav-menu {
-    display: none;
-  }
   
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+    margin-left: 300px;
+    margin-top: -80px;
+  }
+
+  .burger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }
+
+.burger-menu.active .burger:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active .burger:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu.active .burger:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+position: fixed;
+left: -100%;
+top: 70px;
+gap: 0;
+flex-direction: column;
+background-color: black;
+width: 100%;
+text-align: center;
+transition: 0.3s;
+display: block;
+z-index: 1;
+padding: 20px 0;
+}
+
+.nav-item {
+  margin: 16px 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
   .logo {
 margin-left: -192px;
 }
 
 .search-container {
 justify-content: center;
-margin-left: 335px;
-margin-top: -80px;
+margin-left: 360px;
+margin-top: -32px;
 }
 
 #search {
@@ -290,18 +356,6 @@ margin-top: -80px;
   color: black;
   background-color: #fff;
   font-size: 0.8rem;
-}
-
-.burger-menu {
-  display: flex;
-  margin-left: 350px;
-  height: auto;
-  max-width: 50%;
-  background: none;
-  border: none;
-  padding: 0;
-  margin-left: auto;
-  margin-top: -65px;
 }
 
 .background-clip {
