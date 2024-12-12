@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/praktiskinformation.css">  
 <link rel="icon" href="/img/logos.png" type="image/x-icon">
+<link src="/js/praktiskinformation.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 <title>Radar Praktisk Information</title>
 </head>
 
@@ -47,10 +49,9 @@
                   <source src="/mp4/Concertmedia.mp4" type="video/mp4">
               </div>
               <div class="box-content">
-                <h2>#Sociale Medier#</h2>
-                <p>Dette er noget eksempeltekst til boks 2.</p>
-              </div>
-            </div>
+                <h2></h2>
+                </div>
+                </div>
         
             <div class="box">
               <div class="box-image">
@@ -72,6 +73,31 @@
               </div>
             </div>
           </div>
-    </main>
+    
+          <div class="social-share-box">
+            <textarea class="post-input" placeholder="Del dine oplevelse med andre!"></textarea>
+            <div class="character-count">0 / 280 ord</div>
+            
+            <div class="video-upload">
+                <i class="fas fa-video"></i>
+                <p>Tryk her for at oplade video eller drag and drop</p>
+                <p class="file-info">Maximum file size: 100MB</p>
+                <input type="file" id="video-input" accept="video/*" style="display: none;">
+            </div>
+            <video class="video-preview" controls></video>
+            
+            <div class="social-buttons">
+                <button class="social-button facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    Del på Facebook
+                </button>
+                <button class="social-button instagram">
+                    <i class="fab fa-instagram"></i>
+                    Del på Instagram
+                </button>
+            </div>
+        </div>
+      
+        </main>
 </body>
 </html>

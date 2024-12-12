@@ -168,4 +168,111 @@ nav .nav-menu li a:hover {
     object-fit: cover;
   }
 
-  
+  .social-share-box {
+    padding: 0.2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: auto;
+    max-width: 500px;
+    position: absolute;
+    margin-top: -780px;
+    margin-left: 670px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: 0 4px 16px -8px #0cf;
+    border: 1px solid #fff;
+
+}
+
+.post-input {
+    width: 100%;
+    min-height: 20px;
+    padding: 1rem;
+    margin-bottom: 0.2rem;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 0.8rem;
+    background-color: transparent;
+}
+
+.post-input::placeholder {
+  color: #fff;
+}
+
+.video-upload {
+    width: 100%;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    border: 2px dashed #fff;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #fff;
+}
+
+.video-upload:hover {
+    background-color: #f3f4f6;
+}
+
+.video-preview {
+    width: 100%;
+    max-height: 300px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    display: none;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    flex: 1;
+    min-width: 120px;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.facebook { background: #1877f2; }
+.instagram { 
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+.character-count {
+    text-align: right;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes shareAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.shared {
+    animation: shareAnimation 0.5s ease;
+}
+
+.file-info {
+    font-size: 0.9rem;
+    color: #fff;
+}
