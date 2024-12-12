@@ -107,9 +107,11 @@ nav .nav-menu li a:hover {
     cursor: pointer;
 }
 
-.event-container:hover{
+.event:hover, .event2:hover{
     transform: scale(1.02); /*gør boksen lidt større */
+    box-shadow: 0 5px 10px #0cf;
     cursor: pointer;
+    position: relative;
 }
 
 .event-container h1.overskrift {
@@ -127,6 +129,7 @@ nav .nav-menu li a:hover {
     border-radius: 8px;
     margin: 15px;
     cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .event .event-date {
@@ -222,13 +225,14 @@ nav .nav-menu li a:hover {
     background-color: #fff;
 }
 
-.gbillede{
+.gbillede, .gbillede2 {
     width: 11%;
     object-fit: cover;
     border-radius: 5px;
     position: absolute;
     left: 5%;
     margin-top: -4px;
+    transition: transform 0.3s ease;
 }
 
 .event-container2 {
@@ -252,6 +256,7 @@ nav .nav-menu li a:hover {
     border-radius: 8px;
     margin: 15px;
     cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .event2 .event-date2 {
@@ -344,15 +349,6 @@ nav .nav-menu li a:hover {
 
 .billetter2:hover{
     background-color: #fff;
-}
-
-.gbillede2{
-    width: 11%;
-    object-fit: cover;
-    border-radius: 5px;
-    position: absolute;
-    left: 11.5%;
-    margin-top: -4px;
 }
 
 .footer {

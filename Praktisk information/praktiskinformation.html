@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/praktiskinformation.css">  
+<link rel="stylesheet" href="/css/praktiskinformation.css">
 <link rel="icon" href="/img/logos.png" type="image/x-icon">
 <link src="/js/praktiskinformation.js">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
@@ -15,13 +15,15 @@
 
 <body>
     <header>
+      <a href="/Forside/index.html">
         <img src="/img/logos.png" alt="Radar Logo" class="logo">
+    </a>
         <nav>
             <ul class="nav-menu">
-                <li><a href="#forside">Forside</a></li>
-                <li><a href="#program">Program & Events</a></li>
-                <li><a href="#radarhack">RadarHack</a></li>
-                <li><a href="#praktisk">Praktisk information</a></li>
+                <li><a href="/Forside/index.html" href="#forside">Forside</a></li>
+                <li><a href="/Program og Events/programogevents.html" href="#program">Program & Events</a></li>
+                <li><a href="/RadarHack/radarhack.html" href="#radarhack">RadarHack</a></li>
+                <li><a href="/Praktisk information/praktiskinformation.html" href="#praktisk">Praktisk information</a></li>
             </ul>
         </nav>
         <div class="search-container">
@@ -31,9 +33,10 @@
             </button>
         </div>
     </header>
+
     <main>
-        <div class="box-container">
-            <div class="box">
+        <section class="box-container">
+            <article class="box">
               <div class="box-image">
                 <img src="/img/ungestud.webp" alt="Billede">
               </div>          
@@ -41,16 +44,18 @@
                 <h2>StudieRabatter</h2>
                 <p>Radar i Aarhus tilbyder flere fede valgmuligheder for studerende, især for dem interesserede i musik og kultur. Som et regionalt spillested med fokus på eksperimenterende og alternativ musik arrangerer Radar årligt over 100 koncerter. De har også særlige læringsforløb målrettet studerende, især inden for elektronisk musikproduktion og kreative fagområder. Der er et væld af nichekoncerter og events, som passer godt til studerendes smag og budget, hvilket gør det til et populært sted for unge i Aarhus.</p>
               </div>
-            </div>
-            </div>
+            </article>
+        </section>
         
-            <div class="box-container2">
-            <div class="box2">
-                <video class="box-video" autoplay loop muted plays-inline class="background-clip">
+          <section class="box-container2">
+            <article class="box2">
+                <video class="box-video" autoplay loop muted playsinline class="background-clip">
                   <source src="/mp4/Concertmedia.mp4" type="video/mp4">
-              </div>
-              <div class="social-share-box">
-                <textarea text="text" class="post-input" placeholder="Del dine oplevelse med andre!"></textarea>
+                  </video>
+                </article>
+              
+              <section class="social-share-box">
+                <textarea class="post-input" placeholder="Del dine oplevelse med andre!"></textarea>
                 <div class="character-count">0 / 280 ord</div>
                 
                 <div class="video-upload">
@@ -59,7 +64,6 @@
                     <p class="file-info">Maximum file size: 100MB</p>
                     <input type="file" id="video-input" accept="video/*" style="display: none;">
                 </div>
-                <video class="video-preview" controls></video>
                 
                 <div class="social-buttons">
                     <button class="social-button facebook">
@@ -71,31 +75,75 @@
                         Del på Instagram
                     </button>
                 </div>
-                </div>
+              </section>
                 
-            <div class="box3">
-              <div class="box-image3">
-                <img src="https://via.placeholder.com/150" alt="Billede">
-              </div>
-              <div class="box-content3">
-                <h2>Vil du være frivillig?</h2>
-                <p>Dette er noget eksempeltekst til boks 3.</p>
-              </div>
-            </div>
-            </div>
+            <section class="box3">
+              <div class="card-container">
+                <article class="card">
+                  <h3>Den fødte bartender?</h3>
+                  <p>Hjælp med at skænk kolde drikkevare over baren</p>
+                  <button>Tilmeld dig</button>
+                </article>
+              
+                <article class="card">
+                  <h3>Elsker du Events</h3>
+                  <p>Vær med til at arrangere events og book koncerter</p>
+                  <button>Tilmeld dig</button>
+                </article>
+              
+                <article class="card">
+                  <h3>Støtte lokalt?</h3>
+                  <p>Andet du vil hjælpe med, så ikke tøv med at være frivillig</p>
+                  <button>Tilmeld dig</button>
+                </article>
+              </div>              
+            </section>
+            </section>
         
-            <div class="box-container4">
-            <div class="box">
-              <div class="box-image">
-                <img src="https://via.placeholder.com/150" alt="Billede">
-              </div>
-              <div class="box-content">
+            <section class="box-container4">
+              <article class="box4">
+              <div class="box-content4">
                 <h2>Samarbejdspartnere</h2>
-                <p>Dette er noget eksempeltekst til boks 4.</p>
+                <p>Radar har et stærkt samarbejde med Train, SPOT Festival og Volume Village, som alle er væsentlige aktører på musikscenen i Aarhus. Sammen skaber de en dynamisk platform for både etablerede og kommende musikere. Train, et af Aarhus’ mest populære spillesteder, er hjemsted for mange af disse events, hvor Radar er med til at facilitere koncerter og aktiviteter. I samme åndedrag er SPOT Festival en vigtig del af samarbejdet, især gennem Volume Village, der præsenterer både nye talenter og er et mødested for musikelskere. Sammen giver disse initiativer både studerende og frivillige mulighed for at engagere sig i musikverdenen og få praktisk erfaring.</p>
               </div>
-            </div>
-          </div>
-      
+              <div class="box-image4">
+                <img src="/img/gt.webp" alt="Billede">
+              </div>
+              </article>
+              </section>
         </main>
+
+        <footer class="footer">
+          <section class="footer-left">
+              <a href="/Forside/index.html" class="logo">
+              <img src="/img/logos.png" alt="Logo">
+              </a>
+            <div class="contact-info">
+              <p class="email">Kontakt@radarlive.dk</p>
+              <p class="phone">86 76 03 44</p>
+            </div>
+          </section>
+        
+          <section class="newsletter">
+            <h3>Nyhedsbrev</h3>
+            <input type="email" placeholder="Indtast din email" id="newsletter-email">
+            <button id="newsletter-button">Tilmeld</button>
+          </section>
+        
+          <section class="footer-right">
+            <h4>Bliv en del af Radar</h4>
+            <div class="social-media-icons">
+              <a href="https://www.facebook.com/radarlive" class="social-icon" target="_blank">
+                <img src="/img/facebook.png" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/radarlive/" class="social-icon" target="_blank">
+                <img src="/img/instagram.png" alt="Instagram">
+              </a>
+              <a href="https://www.youtube.com/user/radarliverec" class="social-icon" target="_blank">
+                <img src="/img/youtube.png" alt="Twitter">
+              </a>
+            </div>
+          </section>
+        </footer>  
 </body>
 </html>
