@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(#3a4851 2%,#16262e);
+    background-image: linear-gradient(#16262e 30%,#3a4851);
     height: 100%;
     margin: 0;
     padding: 0;
@@ -112,12 +112,12 @@ nav .nav-menu li a:hover {
   .box {
     display: flex;
     border: 1px solid #fff;
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden; /* Sørger for, at billedet ikke går udenfor boksen */
     min-height: 250px; /* Højde på boksen */
     width: 90%;
     max-height: 100px;
-    background-color: #16262e;
+    background-color: transparent;
     box-shadow: 0 4px 16px -8px #0cf;
   }
   
@@ -162,11 +162,85 @@ nav .nav-menu li a:hover {
     line-height: 1.5;
   }
 
+  .box-container2 {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner med lige bredde */
+    gap: 70px; /* Mellemrum mellem bokse */
+    max-width: 1100px; /* Juster efter behov */
+    margin: 100px auto; /* Centrer containeren på siden */
+    padding: 5px;
+    align-items: center;
+    justify-items: center;
+    height: 700px;
+    position: relative;
+}
+
+.box2 {
+    width: auto; /* Boksen fylder hele kolonnens bredde */
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 16px #0cf;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.box2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px #0cf;
+    cursor: pointer;
+}
+
   .box-video {
     width: 100%;
-    height: 248px;
+    height: 60%;
     object-fit: cover;
   }
+
+.box3 {
+    width: 500px; /* Boksen fylder hele kolonnens bredde */
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 16px #0cf;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.box3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px #0cf;
+    cursor: pointer;
+}
+
+.box-image3 {
+    width: 100%;
+    height: 66%; /* 2/3 af boksen */
+    object-fit: cover;
+}
+
+.box-content3 {
+    padding: 15px;
+    text-align: center;
+    flex: 1; /* Fylder resten af boksen */
+}
+
+.box-content3 h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #0cf;
+}
+
+.box-content3 p {
+    font-size: 14px;
+    color: #fff;
+}
 
   .social-share-box {
     padding: 0.2rem;
@@ -176,12 +250,18 @@ nav .nav-menu li a:hover {
     height: auto;
     max-width: 500px;
     position: absolute;
-    margin-top: -780px;
-    margin-left: 670px;
+    margin-top: 410px;
+    margin-left: 63px;
     transition: transform 0.5s, box-shadow 0.5s;
     box-shadow: 0 4px 16px -8px #0cf;
     border: 1px solid #fff;
 
+}
+
+.social-share-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px #0cf;
+  cursor: pointer;
 }
 
 .post-input {
@@ -213,7 +293,7 @@ nav .nav-menu li a:hover {
 }
 
 .video-upload:hover {
-    background-color: #f3f4f6;
+    background-color: #496779;
 }
 
 .video-preview {
