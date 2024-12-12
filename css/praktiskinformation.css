@@ -161,3 +161,11 @@ nav .nav-menu li a:hover {
     margin-left: 130px;
     line-height: 1.5;
   }
+
+  .box-video {
+    width: 100%;
+    height: 248px;
+    object-fit: cover;
+  }
+
+  
