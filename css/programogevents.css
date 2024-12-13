@@ -250,12 +250,6 @@ nav .nav-menu li a:hover {
     transition: transform 0.3s ease;
 }
 
-.event-container2 {
-    max-width: 1250px;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
 .event-container2 h1.overskrift2 {
     font-size: 40px;
     text-align: center;
@@ -482,25 +476,20 @@ nav .nav-menu li a:hover {
 
   /* Mobil Iphone 12 Resonsive */
 /* header */
-@media screen and (max-width: 768px) {
-    /* Fjern billederne */
-    .gbillede, .gbillede2 {
-        display: none;
-    }
-
-    /* Header justering */
-    header {
-        padding: 0.5rem;
-    }
+@media screen and (max-width: 390px) {
     
-    .burger-menu {
+    .header{
+        padding: 0.5rem;
+      }
+      
+      .burger-menu {
         display: block;
         cursor: pointer;
         margin-left: 300px;
         margin-top: -80px;
-    }
-
-    .burger {
+      }
+    
+      .burger {
         display: block;
         width: 25px;
         height: 3px;
@@ -508,134 +497,184 @@ nav .nav-menu li a:hover {
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         background-color: #fff;
-    }
-
+      }
+    
     .burger-menu.active .burger:nth-child(2) {
-        opacity: 0;
+      opacity: 0;
     }
-
+    
     .burger-menu.active .burger:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
     }
-
+    
     .burger-menu.active .burger:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
     }
-
-    /* Navigation justering */
+    
     .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: black;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        display: block;
-        z-index: 1;
-        padding: 20px 0;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    display: block;
+    z-index: 1;
+    padding: 20px 0;
+    overflow-x: hidden;
     }
-
+    
     .nav-item {
-        margin: 16px 0;
-        color: #fff;
-        font-size: 1.5rem;
+      margin: 16px 0;
+      color: #fff;
+      font-size: 1.5rem;
     }
-
     .nav-item a {
-        color: #fff;
-        text-decoration: none;
-        display: block;
+      color: #fff;
+      text-decoration: none;
+      display: block;
     }
-
+    
     .nav-menu.active {
-        left: 0;
+      left: 0;
     }
-
-    /* Logo justering */
-    .logo {
-        margin-left: -192px;
+    
+      .logo {
+    margin-left: -192px;
     }
-
-    /* Justering af søgefelt */
+    
     .search-container {
-        justify-content: center;
-        margin-left: 360px;
-        margin-top: -32px;
+    justify-content: center;
+    margin-left: 360px;
+    margin-top: -32px;
     }
-
+    
     #search {
-        width: 150px;  /* Justér bredden på søgefeltet */
-        padding: 0.5rem 2rem 0.5rem 1rem;  /* Placerer lidt ekstra plads til højre for ikonet */
-        font-size: 1rem;
-        border: 1px solid;  /* Tilføjer en kant rundt om søgefeltet */
-        outline: none;  /* Fjern den blå kant ved fokus */
-        border-radius: 5px;
-        color: black;
-        background-color: #fff;
-        font-size: 0.8rem;
+      width: 150px;                 /* Justér bredden på søgefeltet */
+      padding: 0.5rem 2rem 0.5rem 1rem;  /* Placerer lidt ekstra plads til højre for ikonet */
+      font-size: 1rem;
+      border: 1px solid;       /* Tilføjer en kant rundt om søgefeltet */
+      outline: none;                /* Fjern den blå kant ved fokus */
+      border-radius: 5px;
+      color: black;
+      background-color: #fff;
+      font-size: 0.8rem;
     }
 
-    /* Event container justering */
-    .event-container, .event-container2 {
-        max-width: 100%;
+    .event-container {
+        max-width: 1250px;
         margin: 0 auto;
+        transition: transform 0.5s, box-shadow 0.5s; /* giver glidende effekt */
+        transform-origin: center;
+        will-change: transform;
+        cursor: pointer;
+        position: relative;
+        margin-top: -65px;
     }
-
-    /* Overskriftsjustering */
-    .event-container h1.overskrift, .event-container2 h1.overskrift2 {
-        font-size: 30px;
+    
+    .event-container h1.overskrift {
+        font-size: 40px;
         text-align: center;
         border-bottom: 1px solid #fff;
         color: #0cf;
-        margin-top: 100px;
+        margin-top: 200px;
     }
-
-    /* Event bokse */
-    .event, .event2 {
-        display: block;
+    
+    .event {
+        display: flex;
         box-shadow: 0 4px 16px -8px #0cf;
+        display: flex;
         border-radius: 8px;
         margin: 15px;
         cursor: pointer;
         transition: transform 0.5s ease, box-shadow 0.5s ease;
+        height: 100px;
+    }
+    
+    .event .event-date {
+        padding: 10px;
+        background-color: #3a4851;
+        margin-right: 10px;
+        border: 1px solid #fff;
+        height: 65px;
+        width: 65px;
+        margin-left: -55px;
+        justify-content: space-between;
+        position: relative;
+        left: 20%;
+        top: 15px;
+    
+        /* flexbox til centrere indholdet */
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
     }
-
-    /* Justering af tekst og tid i event */
-    .event-right, .event-right2 {
-        padding-left: 0;
-        text-align: center;
+    
+    .event-date .date {
+        font-size: 25px;
+        color: #0cf;
     }
-
-    .event-title, .event-title2 {
-        font-size: 16px;
-        margin: 12px;
+    
+    .event-date .month {
+        font-size: 10px;
+        font-weight: normal;
+        color: #0cf;
+        margin-left: 5px;
+    }
+    
+    .event .event-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -235px;
+    }
+    
+    .event .event-right h3.event-title {
+        font-size: 15px;
         color: #fff;
         text-transform: uppercase;
+        margin-left: 202px;
+        position: relative;
+        top: 5px;
     }
-
-    .event-time, .event-time2 {
-        display: block;
-        margin-left: 0;
-        font-size: 14px;
+    
+    .event .event-right .event-time {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 16px;
+        margin: 20px -12px 0;
+        font-size: 8px;
         color: #fff;
-        text-align: center;
+        margin-left: 189px;
+        position: relative;
+        top: 5px;
     }
-
-    /* Billetknap justering */
-    .køb, .køb2 {
-        margin-left: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        text-align: center;
+    
+    .event-time img:last-of-type {
+        margin-left: 8px; /* Skaber mellemrum mellem tekst og urikonet */
+        height: 10px;
     }
-
-    .billetter, .billetter2 {
+    
+    .event .event-right .event-time img {
+        height: 12px;
+        padding-right: 8px;
+        margin-right: -5px;
+        transform-origin: center;
+    }
+    
+    .køb{
+        margin-left: 300px;
+        margin-bottom: 45px;
+        margin-top: -50px;
+    }
+    
+    .billetter{
         padding: 6px 45px;
         background-color: #3a4851;
         color: #0cf;
@@ -644,78 +683,169 @@ nav .nav-menu li a:hover {
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease;
-        margin: 0 auto;
     }
-
-    .billetter:hover, .billetter2:hover {
-        background-color: #fff;
+    
+    .gbillede, .gbillede2 {
+        display: none;
     }
-
-    /* Footer justering */
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        margin-top: 50px;
-    }
-
-    .footer-left, .footer-right {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-left .logo img {
-        width: 120px;
-        margin-bottom: 10px;
-        margin-left: 0;
-    }
-
-    .contact-info p {
-        margin: 5px 0;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .newsletter {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .newsletter h3 {
-        font-size: 18px;
-        margin-bottom: 2.5px;
-        text-align: center;
-    }
-
-    .newsletter input, .newsletter button {
-        width: 100%;
-        max-width: 300px;
-        margin: 5px auto;
-    }
-
-    .social-media-icons {
+    
+    .event2 {
         display: flex;
-        gap: 25px;
-        justify-content: center;
-    }
-
-    .social-icon {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: white;
+        box-shadow: 0 4px 16px -8px #0cf;
         display: flex;
+        border-radius: 8px;
+        margin: 15px;
+        cursor: pointer;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        height: 100px;
+    }
+    
+    .event2 .event-date2 {
+        padding: 10px;
+        background-color: #3a4851;
+        margin-right: 10px;
+        border: 1px solid #fff;
+        height: 65px;
+        width: 65px;
+        margin-left: -55px;
+        justify-content: space-between;
+        position: relative;
+        left: 20%;
+        top: 15px;
+    
+        /* flexbox til centrere indholdet */
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+    }
+    
+    .event-date2 .date2 {
+        font-size: 25px;
+        color: #0cf;
+    }
+    
+    .event-date2 .month2 {
+        font-size: 10px;
+        font-weight: normal;
+        color: #0cf;
+        margin-left: 5px;
+    }
+    
+    .event2 .event-right2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -235px;
+    }
+    
+    .event2 .event-right2 h3.event-title2 {
+        font-size: 15px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-left: 202px;
+        position: relative;
+        top: 5px;
+    }
+    
+    .event2 .event-right2 .event-time2 {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 16px;
+        margin: 20px -12px 0;
+        font-size: 8px;
+        color: #fff;
+        margin-left: 189px;
+        position: relative;
+        top: 5px;
+    }
+    
+    .event-time2 img:last-of-type {
+        margin-left: 8px; /* Skaber mellemrum mellem tekst og urikonet */
+    }
+    
+    .event2 .event-right2 .event-time2 img {
+        height: 12px;
+        padding-right: 8px;
+        margin-right: -5px;
+        transform-origin: center;
+    }
+    
+    .køb2{
+        margin-left: 300px;
+        margin-bottom: 45px;
+        margin-top: -50px;
+    }
+    
+    .billetter2{
+        padding: 6px 45px;
+        background-color: #3a4851;
+        color: #0cf;
+        font-size: 12px;
+        border: 1px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
 
-    .social-icon img {
-        width: 20px;
-        height: 20px;
-        transition: transform 0.3s ease;
-    }
-
-    .social-icon:hover img {
-        transform: scale(1.2);
-    }
+/* fjerner logo kontakt info og social media skrift (footer) */
+.contact-info p, .footer-left .logo img, .footer-right h4 {
+    display: none;
+  }
+  
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centrerer elementerne horisontalt */
+    justify-content: center; /* Centrerer elementerne vertikalt */
+    text-align: center;  /* Sikrer at teksten også er centreret */
+    width: 100%;         /* Sørger for at containeren fylder hele bredden */
+    position: relative;
+    margin-left: 3px;
+    margin-top: -20px;
+  }
+  
+  .newsletter h3 {
+    font-size: 15px;
+    margin-bottom: 2.5px;
+    text-align: center;
+  }
+  
+  .newsletter input {
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    max-width: 180px;
+    color: black !important;
+    background-color: #fff;
+    border: 1px solid;
+    box-sizing: border-box;
+  }
+  
+  .newsletter button {
+    padding: 8px 20px;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 180px;
+    transition: background-color 0.3s ease;
+    border: 1px solid;
+    box-sizing: border-box;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: -127px;
+    margin-top: 130px;
+  }
 }
