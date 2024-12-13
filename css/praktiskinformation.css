@@ -688,11 +688,12 @@ margin-top: -32px;
 
 /* Justering af boksen */
 .box {
-  width: 85%; /* Bokse fylder hele skærmbredden */
+  width: 88%; /* Bokse fylder hele skærmbredden */
   height: auto; /* Dynamisk højde baseret på indhold */
   min-height: 110px;
   margin-top: 100px;
-  margin-left: -70px;
+  margin-left: -55px;
+
 }
 
 .box-image {
@@ -736,7 +737,7 @@ margin-top: -32px;
       width: 100%;
       max-width: 100%;
       height: 410px;
-      margin-left: 0;
+      margin-left: 20px;
   }
 
   .box-video {
@@ -749,7 +750,7 @@ margin-top: -32px;
   .box3 {
       width: 100%;
       height: auto;
-      margin-left: 0;
+      margin-left: 20px;
       margin-top: 20px;
   }
 
@@ -766,8 +767,8 @@ margin-top: -32px;
     width: 85%; /* Bokse fylder hele skærmbredden */
     height: auto; /* Dynamisk højde baseret på indhold */
     min-height: 110px;
-    margin-top: 100px;
-    margin-left: -50px;
+    margin-top: -25px;
+    margin-left: -55px;
   }
 
   .box-image4 {
@@ -777,16 +778,19 @@ margin-top: -32px;
 
   .box-content4 h2 {
     font-size: 0.5rem; /* Mindre overskrift på små skærme */
-    margin-top: 100px;
+    margin-top: -40px;
     margin-left: -10px;
+    padding: 1px;
   }
 
   .box-content4 p {
-    font-size: 0.32rem; /* Mindre tekst på små skærme */
+    font-size: 0.3rem; /* Mindre tekst på små skærme */
+    width: 1000px;
+    margin-left: 20px;
     margin-top: 150px;
-    width: 180px;
-    margin-left: 30px;
-    margin-top: 145px;
+    display: inline-block;
+    line-height: 0.35rem;
+    padding: 2px;
   }
 
   /* Card container */
@@ -823,7 +827,7 @@ margin-top: -32px;
   .social-share-box {
       width: 100%;
       margin-top: 220px;
-      margin-left: 0;
+      margin-left: 20px;
       min-height: 110px;
       max-width: 256.5px;
   }
@@ -890,7 +894,62 @@ margin-top: -32px;
     100% { transform: scale(1); }
 }
 
-  .footer {
-    display: none;
-  }
+/* fjerner logo kontakt info og social media skrift (footer) */
+.contact-info p, .footer-left .logo img, .footer-right h4 {
+  display: none;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centrerer elementerne horisontalt */
+  justify-content: center; /* Centrerer elementerne vertikalt */
+  text-align: center;  /* Sikrer at teksten også er centreret */
+  width: 100%;         /* Sørger for at containeren fylder hele bredden */
+  position: relative;
+  margin-left: 3px;
+  margin-top: -20px;
+}
+
+.newsletter h3 {
+  font-size: 15px;
+  margin-bottom: 2.5px;
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  max-width: 180px;
+  color: black !important;
+  background-color: #fff;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.newsletter button {
+  padding: 8px 20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 180px;
+  transition: background-color 0.3s ease;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-left: -127px;
+  margin-top: 130px;
+}
 }
