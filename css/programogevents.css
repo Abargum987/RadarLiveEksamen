@@ -28,6 +28,21 @@ header {
     flex-direction: column;
 }
 
+.burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }
+
 main{
     flex: 1;
 }
@@ -464,3 +479,243 @@ nav .nav-menu li a:hover {
   .social-icon:hover img {
     transform: scale(1.2);
   }
+
+  /* Mobil Iphone 12 Resonsive */
+/* header */
+@media screen and (max-width: 768px) {
+    /* Fjern billederne */
+    .gbillede, .gbillede2 {
+        display: none;
+    }
+
+    /* Header justering */
+    header {
+        padding: 0.5rem;
+    }
+    
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+        margin-left: 300px;
+        margin-top: -80px;
+    }
+
+    .burger {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #fff;
+    }
+
+    .burger-menu.active .burger:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.active .burger:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger-menu.active .burger:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Navigation justering */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        display: block;
+        z-index: 1;
+        padding: 20px 0;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .nav-item a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* Logo justering */
+    .logo {
+        margin-left: -192px;
+    }
+
+    /* Justering af søgefelt */
+    .search-container {
+        justify-content: center;
+        margin-left: 360px;
+        margin-top: -32px;
+    }
+
+    #search {
+        width: 150px;  /* Justér bredden på søgefeltet */
+        padding: 0.5rem 2rem 0.5rem 1rem;  /* Placerer lidt ekstra plads til højre for ikonet */
+        font-size: 1rem;
+        border: 1px solid;  /* Tilføjer en kant rundt om søgefeltet */
+        outline: none;  /* Fjern den blå kant ved fokus */
+        border-radius: 5px;
+        color: black;
+        background-color: #fff;
+        font-size: 0.8rem;
+    }
+
+    /* Event container justering */
+    .event-container, .event-container2 {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Overskriftsjustering */
+    .event-container h1.overskrift, .event-container2 h1.overskrift2 {
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        color: #0cf;
+        margin-top: 100px;
+    }
+
+    /* Event bokse */
+    .event, .event2 {
+        display: block;
+        box-shadow: 0 4px 16px -8px #0cf;
+        border-radius: 8px;
+        margin: 15px;
+        cursor: pointer;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Justering af tekst og tid i event */
+    .event-right, .event-right2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .event-title, .event-title2 {
+        font-size: 16px;
+        margin: 12px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .event-time, .event-time2 {
+        display: block;
+        margin-left: 0;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+    }
+
+    /* Billetknap justering */
+    .køb, .køb2 {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .billetter, .billetter2 {
+        padding: 6px 45px;
+        background-color: #3a4851;
+        color: #0cf;
+        font-size: 12px;
+        border: 1px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 0 auto;
+    }
+
+    .billetter:hover, .billetter2:hover {
+        background-color: #fff;
+    }
+
+    /* Footer justering */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .footer-left, .footer-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left .logo img {
+        width: 120px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .contact-info p {
+        margin: 5px 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .newsletter {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .newsletter h3 {
+        font-size: 18px;
+        margin-bottom: 2.5px;
+        text-align: center;
+    }
+
+    .newsletter input, .newsletter button {
+        width: 100%;
+        max-width: 300px;
+        margin: 5px auto;
+    }
+
+    .social-media-icons {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .social-icon:hover img {
+        transform: scale(1.2);
+    }
+}

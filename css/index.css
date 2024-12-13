@@ -271,7 +271,7 @@ nav .nav-menu li a:hover {
 
 /* Mobil Iphone 12 Resonsive */
 /* header */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 390px) {
   
   .header{
     padding: 0.5rem;
@@ -319,6 +319,7 @@ transition: 0.3s;
 display: block;
 z-index: 1;
 padding: 20px 0;
+overflow-x: hidden;
 }
 
 .nav-item {
@@ -360,7 +361,7 @@ margin-top: -32px;
 
 .background-clip {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .background-clip {
@@ -368,7 +369,7 @@ margin-top: -32px;
   height: 100%;
 }
 
-/* fjerner logo kontakt info og social media skrift */
+/* fjerner logo kontakt info og social media skrift (footer) */
 .contact-info p, .footer-left .logo img, .footer-right h4 {
   display: none;
 }
@@ -382,7 +383,7 @@ margin-top: -32px;
   width: 100%;         /* Sørger for at containeren fylder hele bredden */
   position: relative;
   margin-left: 3px;
-  margin-top: -110px;
+  margin-top: -115px;
 }
 
 .newsletter h3 {
@@ -394,7 +395,7 @@ margin-top: -32px;
 .newsletter input {
   padding: 8px;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border-radius: 5px;
   max-width: 180px;
   color: black !important;
@@ -424,7 +425,7 @@ margin-top: -32px;
   align-items: center;
   background-color: white;
   margin-left: -127px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 }
