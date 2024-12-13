@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/praktiskinformation.css">
 <link rel="icon" href="/img/logos.png" type="image/x-icon">
-<link src="/js/praktiskinformation.js">
+<link rel="js" href="/js/praktiskinformation.js">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 <title>Radar Praktisk Information</title>
 </head>
@@ -28,10 +28,10 @@
     
         <nav>
             <ul class="nav-menu">
-                <li><a href="/Forside/index.html" href="#forside">Forside</a></li>
-                <li><a href="/Program og Events/programogevents.html" href="#program">Program & Events</a></li>
-                <li><a href="/RadarHack/radarhack.html" href="#radarhack">RadarHack</a></li>
-                <li><a href="/Praktisk information/praktiskinformation.html" href="#praktisk">Praktisk information</a></li>
+                <li><a href="/Forside/index.html">Forside</a></li>
+                <li><a href="/ProgramogEvents/programogevents.html">Program & Events</a></li>
+                <li><a href="/RadarHack/radarhack.html">RadarHack</a></li>
+                <li><a href="/Praktiskinformation/praktiskinformation.html">Praktisk information</a></li>
             </ul>
         </nav>
         <div class="search-container">
@@ -43,7 +43,7 @@
     </header>
 
     <main>
-        <section class="box-container">
+        <div class="box-container">
             <article class="box">
               <div class="box-image">
                 <img src="/img/ungestud.webp" alt="Billede">
@@ -53,16 +53,16 @@
                 <p>Radar i Aarhus tilbyder flere fede valgmuligheder for studerende, især for dem interesserede i musik og kultur. Som et regionalt spillested med fokus på eksperimenterende og alternativ musik arrangerer Radar årligt over 100 koncerter. De har også særlige læringsforløb målrettet studerende, især inden for elektronisk musikproduktion og kreative fagområder. Der er et væld af nichekoncerter og events, som passer godt til studerendes smag og budget, hvilket gør det til et populært sted for unge i Aarhus.</p>
               </div>
             </article>
-        </section>
+        </div>
         
-          <section class="box-container2">
-            <article class="box2">
-                <video class="box-video" autoplay loop muted playsinline class="background-clip">
+          <div class="box-container2">
+            <div class="box2">
+                <video class="box-video" autoplay loop muted playsinline>
                   <source src="/mp4/Concertmedia.mp4" type="video/mp4">
                   </video>
-                </article>
+            </div>
               
-              <section class="social-share-box">
+              <div class="social-share-box">
                 <textarea class="post-input" placeholder="Del dine oplevelse med andre!"></textarea>
                 <div class="character-count">0 / 280 ord</div>
                 
@@ -83,9 +83,9 @@
                         Del på Instagram
                     </button>
                 </div>
-              </section>
+              </div>
                 
-            <section class="box3">
+            <div class="box3">
               <div class="card-container">
                 <article class="card">
                   <h3>Den fødte bartender?</h3>
@@ -105,10 +105,10 @@
                   <button>Tilmeld dig</button>
                 </article>
               </div>              
-            </section>
-            </section>
+            </div>
+          </div>
         
-            <section class="box-container4">
+            <div class="box-container4">
               <article class="box4">
               <div class="box-content4">
                 <h2>Samarbejdspartnere</h2>
@@ -118,11 +118,12 @@
                 <img src="/img/gt.webp" alt="Billede">
               </div>
               </article>
-              </section>
+            </div>
+              <script src="/js/praktiskinformation.js"></script>
         </main>
 
         <footer class="footer">
-          <section class="footer-left">
+          <div class="footer-left">
               <a href="/Forside/index.html" class="logo">
               <img src="/img/logos.png" alt="Logo">
               </a>
@@ -130,7 +131,7 @@
               <p class="email">Kontakt@radarlive.dk</p>
               <p class="phone">86 76 03 44</p>
             </div>
-          </section>
+          </div>
         
           <section class="newsletter">
             <h3>Nyhedsbrev</h3>
