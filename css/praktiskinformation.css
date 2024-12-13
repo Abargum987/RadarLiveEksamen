@@ -364,7 +364,6 @@ nav .nav-menu li a:hover {
   .social-share-box {
     padding: 0.2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 90%;
     height: auto;
     max-width: 500px;
@@ -372,7 +371,7 @@ nav .nav-menu li a:hover {
     margin-top: 440px;
     margin-left: -515px;
     transition: transform 0.5s, box-shadow 0.5s;
-    box-shadow: 0 4px 16px -8px #0cf;
+    box-shadow: 0 2px 8px -8px #0cf;
     border: 1px solid #fff;
 
 }
@@ -696,7 +695,6 @@ margin-top: -32px;
   margin-left: -70px;
 }
 
-/* Billedboks til 100% bredde */
 .box-image {
   width: 60%;
   height: 150px; /* Reduceret højde på små skærme */
@@ -729,13 +727,15 @@ margin-top: -32px;
       margin: 20px auto;
       padding: 10px;
       height: auto;
+      width: 320px;
+      margin-left: 1px;
   }
 
   /* Justering af boks2 */
   .box2 {
       width: 100%;
       max-width: 100%;
-      height: auto;
+      height: 410px;
       margin-left: 0;
   }
 
@@ -750,6 +750,7 @@ margin-top: -32px;
       width: 100%;
       height: auto;
       margin-left: 0;
+      margin-top: 20px;
   }
 
   .box-content3 h2 {
@@ -762,23 +763,30 @@ margin-top: -32px;
 
   /* Justering af boks4 */
   .box4 {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
+    width: 85%; /* Bokse fylder hele skærmbredden */
+    height: auto; /* Dynamisk højde baseret på indhold */
+    min-height: 110px;
+    margin-top: 100px;
+    margin-left: -50px;
   }
 
   .box-image4 {
-      width: 100%;
-      height: 100px;
+    width: 60%;
+    height: 150px; /* Reduceret højde på små skærme */
   }
 
   .box-content4 h2 {
-      font-size: 1.2rem;
-      margin-top: 10px;
+    font-size: 0.5rem; /* Mindre overskrift på små skærme */
+    margin-top: 100px;
+    margin-left: -10px;
   }
 
   .box-content4 p {
-      font-size: 0.9rem;
+    font-size: 0.32rem; /* Mindre tekst på små skærme */
+    margin-top: 150px;
+    width: 180px;
+    margin-left: 30px;
+    margin-top: 145px;
   }
 
   /* Card container */
@@ -787,13 +795,15 @@ margin-top: -32px;
       flex-wrap: wrap;
       margin-top: 20px;
       padding: 10px;
+      height: auto;
+      margin-bottom: 35px;
   }
 
   .card {
       width: 100%;
       max-width: 100%;
       padding: 10px;
-      margin-top: 10px;
+      margin-top: 15px;
   }
 
   .card h3 {
@@ -812,29 +822,48 @@ margin-top: -32px;
   /* Social share boks */
   .social-share-box {
       width: 100%;
-      margin-top: 20px;
+      margin-top: 220px;
       margin-left: 0;
-      max-width: 100%;
+      min-height: 110px;
+      max-width: 256.5px;
   }
 
-  /* Post input */
   .post-input {
-      font-size: 0.9rem;
-  }
+    width: 100%;
+    min-height: 20px;
+    padding: 1rem;
+    margin-bottom: 0.2rem;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 0.8rem;
+    background-color: transparent;
+    font-size: 0.5rem;
+}
 
   .video-upload {
-      font-size: 1rem;
-  }
+    width: 100%;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    border: 2px dashed #fff;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #fff;
+    font-size: 0.5rem;
+}
 
   .social-buttons {
       gap: 0.5rem;
       flex-wrap: wrap;
+      width: 100%;
   }
 
   .social-button {
       flex: 1;
-      min-width: 100px;
-      font-size: 0.9rem;
+      max-width: 10px;
+      font-size: 0.6rem;
       padding: 0.8rem;
   }
 
@@ -847,12 +876,19 @@ margin-top: -32px;
   }
 
   .character-count {
-      font-size: 0.8rem;
+      font-size: 0.4rem;
+      text-align: right;
+      margin-bottom: 0.5rem;
   }
 
   .file-info {
-      font-size: 0.8rem;
+      font-size: 0.5rem;
   }
+  @keyframes shareAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
 
   .footer {
     display: none;
