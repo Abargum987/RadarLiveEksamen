@@ -567,6 +567,7 @@ nav .nav-menu li a:hover {
     .event-container {
         max-width: 1250px;
         margin: 0 auto;
+        transition: transform 0.5s, box-shadow 0.5s; /* giver glidende effekt */
         transform-origin: center;
         will-change: transform;
         cursor: pointer;
@@ -589,6 +590,7 @@ nav .nav-menu li a:hover {
         border-radius: 8px;
         margin: 15px;
         cursor: pointer;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
         height: 100px;
     }
     
@@ -694,6 +696,7 @@ nav .nav-menu li a:hover {
         border-radius: 8px;
         margin: 15px;
         cursor: pointer;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
         height: 100px;
     }
     
@@ -784,6 +787,7 @@ nav .nav-menu li a:hover {
         border: 1px;
         border-radius: 5px;
         cursor: pointer;
+        transition: background-color 0.3s ease;
     }
 
 /* fjerner logo kontakt info og social media skrift (footer) */
@@ -828,6 +832,7 @@ nav .nav-menu li a:hover {
     border-radius: 5px;
     cursor: pointer;
     max-width: 180px;
+    transition: background-color 0.3s ease;
     border: 1px solid;
     box-sizing: border-box;
   }
