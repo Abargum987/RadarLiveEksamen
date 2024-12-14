@@ -310,7 +310,7 @@ nav .nav-menu li a:hover {
 /* header */
 @media screen and (max-width: 390px) {
   
-  .header{
+  header{
     padding: 0.5rem;
   }
   
@@ -427,16 +427,15 @@ margin-top: -32px;
 
 /* Standard stil til boksene */
 .box {
-  width: 96.5%; /* Boksen fylder hele kolonnens bredde */
-  height: 480px;
+  width: 94.5%; /* Boksen fylder hele kolonnens bredde */
+  height: 580px;
   border: 1px solid #fff;
   border-radius: 8px;
   overflow: hidden;
   background-color: #3a4851;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 8px #0cf;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: none;
 }
 
 .box img {
@@ -504,7 +503,6 @@ margin-top: -32px;
   border-radius: 5px;
   cursor: pointer;
   max-width: 180px;
-  transition: background-color 0.3s ease;
   border: 1px solid;
   box-sizing: border-box;
 }

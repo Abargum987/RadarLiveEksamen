@@ -154,7 +154,7 @@ nav .nav-menu li a:hover {
     height: 100%;
 }
 
-.footer {
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -273,7 +273,7 @@ nav .nav-menu li a:hover {
 /* header */
 @media screen and (max-width: 390px) {
   
-  .header{
+  header{
     padding: 0.5rem;
   }
   
@@ -348,7 +348,7 @@ margin-top: -32px;
 }
 
 #search {
-  width: 150px;                 /* Justér bredden på søgefeltet */
+  width: 140px;                 /* Justér bredden på søgefeltet */
   padding: 0.5rem 2rem 0.5rem 1rem;  /* Placerer lidt ekstra plads til højre for ikonet */
   font-size: 1rem;
   border: 1px solid;       /* Tilføjer en kant rundt om søgefeltet */
@@ -370,6 +370,7 @@ margin-top: -32px;
 }
 
 /* fjerner logo kontakt info og social media skrift (footer) */
+
 .contact-info p, .footer-left .logo img, .footer-right h4 {
   display: none;
 }
@@ -426,5 +427,6 @@ margin-top: -32px;
   background-color: white;
   margin-left: -127px;
   margin-top: 40px;
+  position: relative;
 }
 }
