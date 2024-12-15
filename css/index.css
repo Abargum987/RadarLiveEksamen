@@ -365,12 +365,11 @@ margin-top: -32px;
 }
 
 .background-clip {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
 /* fjerner logo kontakt info og social media skrift (footer) */
-
 .contact-info p, .footer-left .logo img, .footer-right h4 {
   display: none;
 }
