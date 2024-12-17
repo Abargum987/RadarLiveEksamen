@@ -6,6 +6,7 @@
     font-weight: bold;
 }
 
+/* Baggrundsfarve */
 body {
     background-image: linear-gradient(#16262e 7%, #3a4851);
     height: 100%;
@@ -15,6 +16,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Header */
 header {
     width: 100%;
     padding: 1rem 0;          /* Giver lidt luft omkring logoet */
@@ -28,12 +30,14 @@ header {
     flex-direction: column;
 }
 
+/* Logo */
 .logo {
     height: 50px;             /* Justér højden efter behov */
     width: auto;              /* Bevarer logoets proportioner */
     margin-bottom: 2rem;
 }
 
+/* Menubar */
 nav .nav-menu {
     list-style: none;            /* Fjerner punktopstilling */
     padding: 0;
@@ -55,6 +59,7 @@ nav .nav-menu li a:hover {
     color: #0cf;              /* Ændrer farve ved hover (justér farven efter behov) */
 }
 
+/* Søgefunktion */
 .search-container {
     margin-top: 2rem;             /* Afstand mellem menuen og søgefeltet */
     display: flex;
@@ -93,6 +98,7 @@ nav .nav-menu li a:hover {
     height: 15px;
 }
 
+/* Fire box på hjemmesiden */
 .container-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* To kolonner med lige bredde */
@@ -102,6 +108,7 @@ nav .nav-menu li a:hover {
     padding: 20px;
 }
 
+/* Box indhold */
 .box {
     width: 100%; /* Boksen fylder hele kolonnens bredde */
     height: 440px;
@@ -144,6 +151,7 @@ nav .nav-menu li a:hover {
     color: #fff;
 }
 
+/* Footer */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -161,6 +169,7 @@ nav .nav-menu li a:hover {
     flex-direction: column;
   }
   
+  /* Logo i footer og kontakt informationer */
   .footer-left .logo img {
     width: 120px;
     margin-bottom: 10px;
@@ -177,6 +186,7 @@ nav .nav-menu li a:hover {
     margin-left: 5px;
   }
   
+  /* Nyhedsbrev */
   .newsletter {
     display: flex;
     flex-direction: column;
@@ -226,6 +236,7 @@ nav .nav-menu li a:hover {
     color: #0cf;
   }
   
+  /* En del af Radar */
   .footer-right h4 {
     font-size: 18px;
     position: relative;
@@ -234,6 +245,7 @@ nav .nav-menu li a:hover {
     text-align: center;
   }
   
+  /* social media ikoner */
   .social-media-icons {
     display: flex;
     gap: 25px;
@@ -259,6 +271,7 @@ nav .nav-menu li a:hover {
     transform: scale(1.2);
   }
 
+  /* Boxe mellem infographic */
   .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -270,6 +283,7 @@ nav .nav-menu li a:hover {
     margin-top: -180px;
 }
 
+/* Indhold af boxe mellem inforgraphic */
 .image-box {
     display: flex;
     justify-content: center;
@@ -290,6 +304,7 @@ nav .nav-menu li a:hover {
     object-fit: cover;
 }
 
+/* Infographic */
 .infographic-box {
     grid-column: 2 / 3;
     grid-row: 1 / span 2;
@@ -310,10 +325,12 @@ nav .nav-menu li a:hover {
 /* header */
 @media screen and (max-width: 390px) {
   
+  /* Header responsiv */
   header{
     padding: 0.5rem;
   }
   
+  /* Burgermenu responsiv */
   .burger-menu {
     display: block;
     cursor: pointer;
@@ -343,6 +360,7 @@ nav .nav-menu li a:hover {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/* Menu i burgermenu */
 .nav-menu {
 position: fixed;
 left: -100%;
@@ -374,10 +392,12 @@ overflow-x: hidden;
   left: 0;
 }
 
+/* Logo responsiv */
   .logo {
 margin-left: -192px;
 }
 
+/* Søgefunktion responsiv */
 .search-container {
 justify-content: center;
 margin-left: 360px;
@@ -396,10 +416,12 @@ margin-top: -32px;
   font-size: 0.8rem;
 }
 
+/* Fjerner billeder om infographic og infographic */
 .image-grid {
   display: none;
 }
 
+/* Fire box på hjemmesiden responsiv */
   .container-box {
       grid-template-columns: 1fr; /* En kolonne i stedet for to */
       gap: 20px;                  /* Reducer mellemrum mellem bokse */
@@ -425,7 +447,7 @@ margin-top: -32px;
       font-size: 12px;            /* Juster tekststørrelsen */
   }
 
-/* Standard stil til boksene */
+/* Standard stil til boksene responsiv */
 .box {
   width: 94.5%; /* Boksen fylder hele kolonnens bredde */
   height: 580px;
@@ -466,6 +488,7 @@ margin-top: -32px;
   display: none;
 }
 
+/* Nyhedsbrev responsiv */
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -507,6 +530,7 @@ margin-top: -32px;
   box-sizing: border-box;
 }
 
+/* Social media ikoner responsiv */
 .social-icon {
   width: 30px;
   height: 30px;

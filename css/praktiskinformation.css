@@ -6,6 +6,7 @@
     font-weight: bold;
 }
 
+/* Baggrundsfarve */
 body {
     background-image: linear-gradient(#16262e 30%,#3a4851);
     height: 100%;
@@ -15,6 +16,7 @@ body {
     box-sizing: border-box;
 }
 
+/* header */
 header {
     width: 100%;
     padding: 1rem 0;          /* Giver lidt luft omkring logoet */
@@ -28,16 +30,14 @@ header {
     flex-direction: column;
 }
 
-main{
-    flex: 1;
-}
-
+/* Logo */
 .logo {
     height: 50px;             /* Justér højden efter behov */
     width: auto;              /* Bevarer logoets proportioner */
     margin-bottom: 2rem;
 }
 
+/* Søgefunktion */
 nav .nav-menu {
     list-style: none;            /* Fjerner punktopstilling */
     padding: 0;
@@ -97,6 +97,7 @@ nav .nav-menu li a:hover {
     height: 15px;
 }
 
+/* Box 1 */
 .box-container {
     width: 100%;
     max-width: 1500px;
@@ -109,6 +110,7 @@ nav .nav-menu li a:hover {
     transition: transform 0.5s, box-shadow 0.5s;
   }
   
+  /* Box 1 indhold */
   .box {
     display: flex;
     border: 1px solid #fff;
@@ -139,6 +141,7 @@ nav .nav-menu li a:hover {
     object-fit: cover; /* Sørger for, at billedet dækker hele området */
   }
   
+  /* Box tekst */
   .box-content {
     width: 75%; /* Resten af boksen */
     padding: 20px;
@@ -147,6 +150,7 @@ nav .nav-menu li a:hover {
     justify-content: center;
   }
   
+  /* Box overskrift */
   .box-content h2 {
     margin-bottom: -145px;
     font-size: 1.5rem;
@@ -155,6 +159,7 @@ nav .nav-menu li a:hover {
     margin-top: -50px;
   }
   
+  /* Box tekst indhold */
   .box-content p {
     color: #fff;
     text-align: center;
@@ -168,6 +173,7 @@ nav .nav-menu li a:hover {
     line-height: 1.5;
   }
 
+  /* Box 2 */
   .box-container2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* To kolonner med lige bredde */
@@ -181,6 +187,7 @@ nav .nav-menu li a:hover {
     justify-content: center;
 }
 
+/* Box 2 indhold */
 .box2 {
     width: 625px; /* Boksen fylder hele kolonnens bredde */
     height: 100%;
@@ -207,6 +214,7 @@ nav .nav-menu li a:hover {
     object-fit: cover;
   }
 
+/* Box 3 */
 .box3 {
     width: 350px;
     height: 100%;
@@ -226,6 +234,7 @@ nav .nav-menu li a:hover {
     cursor: pointer;
 }
 
+/* Box 3 indhold */
 .box-content3 {
     padding: 15px;
     text-align: center;
@@ -243,6 +252,7 @@ nav .nav-menu li a:hover {
     color: #fff;
 }
 
+/* Box 4 */
 .box-container4 {
     width: 100%;
     max-width: 1500px;
@@ -256,6 +266,7 @@ nav .nav-menu li a:hover {
     margin-top: 50px;
   }
   
+  /* Box 4 indhold */
   .box4 {
     display: flex;
     border: 1px solid #fff;
@@ -287,6 +298,7 @@ nav .nav-menu li a:hover {
     object-fit: cover; /* Sørger for, at billedet dækker hele området */
   }
   
+  /* Box 4 tekst */
   .box-content4 {
     width: 75%; /* Resten af boksen */
     padding: 20px;
@@ -297,6 +309,7 @@ nav .nav-menu li a:hover {
     margin-top: 40px;
   }
   
+  /* Box 4 overskrift */
   .box-content4 h2 {
     margin-bottom: -150px;
     font-size: 1.5rem;
@@ -305,6 +318,7 @@ nav .nav-menu li a:hover {
     margin-top: -50px;
   }
   
+  /* Box 4 tekst indhold */
   .box-content4 p {
     font-size: 1rem;
     color: #fff;
@@ -319,7 +333,7 @@ nav .nav-menu li a:hover {
     line-height: 1.5;
   }
 
-
+/* Kort i box 3 */
 .card-container {
     display: flex;
     justify-content: center;
@@ -329,6 +343,7 @@ nav .nav-menu li a:hover {
     padding: 20px;
   }
   
+  /* Kort indhold */
   .card {
     background: #fff;
     padding: 15px;
@@ -347,6 +362,7 @@ nav .nav-menu li a:hover {
     margin-top: 5px;
   }
   
+  /* Knap i kort */
   .card button {
     background-color: #0cf;
     color: white;
@@ -361,6 +377,7 @@ nav .nav-menu li a:hover {
     transform: scale(1.05);
   }  
 
+  /* Social media deling på website */
   .social-share-box {
     padding: 0.2rem;
     border-radius: 10px;
@@ -382,6 +399,7 @@ nav .nav-menu li a:hover {
   cursor: pointer;
 }
 
+/* Anmeldelser */
 .post-input {
     width: 100%;
     min-height: 20px;
@@ -398,6 +416,7 @@ nav .nav-menu li a:hover {
   color: #fff;
 }
 
+/* Upload af video til social media */
 .video-upload {
     width: 100%;
     padding: 0.2rem;
@@ -422,6 +441,7 @@ nav .nav-menu li a:hover {
     display: none;
 }
 
+/* Knapper for deling på social media */
 .social-buttons {
     display: flex;
     gap: 1rem;
@@ -454,6 +474,7 @@ nav .nav-menu li a:hover {
     background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
 }
 
+/* Antal anslag til anmeldser */
 .character-count {
     text-align: right;
     color: #fff;
@@ -470,11 +491,13 @@ nav .nav-menu li a:hover {
     animation: shareAnimation 0.5s ease;
 }
 
+/* Maksimum størrelse på video */
 .file-info {
     font-size: 0.9rem;
     color: #fff;
 }
 
+/* Footer */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -492,12 +515,14 @@ nav .nav-menu li a:hover {
     flex-direction: column;
   }
   
+  /* Logo i footer */
   .footer-left .logo img {
     width: 120px;
     margin-bottom: 10px;
     margin-left: 15px;
   }
   
+  /* Kontakt information */
   .contact-info p{
     margin: 5px 0;
     font-size: 14px;
@@ -508,6 +533,7 @@ nav .nav-menu li a:hover {
     margin-left: 5px;
   }
   
+  /* Nyhedsbrev */
   .newsletter {
     display: flex;
     flex-direction: column;
@@ -557,6 +583,7 @@ nav .nav-menu li a:hover {
     color: #0cf;
   }
   
+  /* Bliv en del af Radar */
   .footer-right h4 {
     font-size: 18px;
     position: relative;
@@ -565,6 +592,7 @@ nav .nav-menu li a:hover {
     text-align: center;
   }
   
+  /* Social media ikoner */
   .social-media-icons {
     display: flex;
     gap: 25px;
@@ -591,9 +619,14 @@ nav .nav-menu li a:hover {
   }
 
   /* Mobil Iphone 12 Resonsive */
-/* header */
 @media screen and (max-width: 390px) {
   
+  /* Header responsiv */
+  header{
+    padding: 0.5rem;
+  }
+
+  /* Burgermenu responsiv */
   .burger-menu {
     display: block;
     cursor: pointer;
@@ -623,6 +656,7 @@ nav .nav-menu li a:hover {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/* Menu i burgermenu responsiv */
 .nav-menu {
 position: fixed;
 left: -100%;
@@ -652,10 +686,12 @@ overflow-x: hidden;
   left: 0;
 }
 
+/* Logo responsiv */
   .logo {
 margin-left: -192px;
 }
 
+/* Søgefunktion responsiv */
 .search-container {
 justify-content: center;
 margin-left: 360px;
@@ -674,14 +710,14 @@ margin-top: -32px;
   font-size: 0.8rem;
 }
 
-/* Justering af containeren */
+/* Justering af containeren responsiv */
 .box-container {
   margin-top: 20px;
   gap: 10px; /* Mellemrum mellem boksene */
   padding: 10px;
 }
 
-/* Justering af boksen */
+/* Justering af boksen responsiv */
 .box {
   width: 88%; /* Bokse fylder hele skærmbredden */
   height: auto; /* Dynamisk højde baseret på indhold */
@@ -696,7 +732,7 @@ margin-top: -32px;
   height: 150px; /* Reduceret højde på små skærme */
 }
 
-/* Justering af tekstindhold */
+/* Justering af tekstindhold responsiv */
 .box-content {
   padding: 10px;
   margin-top: 95px;
@@ -716,7 +752,7 @@ margin-top: -32px;
   margin-top: 145px;
 }
 
-  /* Justering af container2 (grid layout) */
+  /* Justering af container2 (grid layout) responsiv */
   .box-container2 {
       grid-template-columns: 1fr; /* En kolonne i stedet for to */
       gap: 20px;
@@ -727,7 +763,7 @@ margin-top: -32px;
       margin-left: 1px;
   }
 
-  /* Justering af boks2 */
+  /* Justering af boks2 responsiv */
   .box2 {
       width: 100%;
       max-width: 100%;
@@ -741,7 +777,7 @@ margin-top: -32px;
       object-fit: cover;
   }
 
-  /* Justering af boks3 */
+  /* Justering af boks3 responsiv */
   .box3 {
       width: 100%;
       height: auto;
@@ -757,7 +793,7 @@ margin-top: -32px;
       font-size: 0.9rem;
   }
 
-  /* Justering af boks4 */
+  /* Justering af boks4 responsiv */
   .box4 {
     width: 85%; /* Bokse fylder hele skærmbredden */
     height: auto; /* Dynamisk højde baseret på indhold */
@@ -788,7 +824,7 @@ margin-top: -32px;
     padding: 2px;
   }
 
-  /* Card container */
+  /* Kort container responsiv */
   .card-container {
       gap: 10px;
       flex-wrap: wrap;
@@ -798,6 +834,7 @@ margin-top: -32px;
       margin-bottom: 35px;
   }
 
+  /* Kort indhold responsiv */
   .card {
       width: 100%;
       max-width: 100%;
@@ -813,12 +850,13 @@ margin-top: -32px;
       font-size: 0.9rem;
   }
 
+  /* Knap i kort responsiv */
   .card button {
       padding: 8px;
       font-size: 1rem;
   }
 
-  /* Social share boks */
+  /* Social share boks responsiv */
   .social-share-box {
       width: 100%;
       margin-top: 220px;
@@ -827,6 +865,7 @@ margin-top: -32px;
       max-width: 256.5px;
   }
 
+  /* Anmeldelser responsiv */
   .post-input {
     width: 100%;
     min-height: 20px;
@@ -840,6 +879,7 @@ margin-top: -32px;
     font-size: 0.5rem;
 }
 
+/* Upload af video til social media responsiv */
   .video-upload {
     width: 100%;
     padding: 0.2rem;
@@ -853,6 +893,7 @@ margin-top: -32px;
     font-size: 0.5rem;
 }
 
+/* Knapper for deling på social media responsiv */
   .social-buttons {
       gap: 0.5rem;
       flex-wrap: wrap;
@@ -874,15 +915,18 @@ margin-top: -32px;
       background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
   }
 
+  /* Antal anslag til anmeldser responsiv */
   .character-count {
       font-size: 0.4rem;
       text-align: right;
       margin-bottom: 0.5rem;
   }
 
+  /* Maksimum størrelse på video */
   .file-info {
       font-size: 0.5rem;
   }
+
   @keyframes shareAnimation {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
@@ -894,6 +938,7 @@ margin-top: -32px;
   display: none;
 }
 
+/* Nyhedsbrev responsiv */
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -935,6 +980,7 @@ margin-top: -32px;
   box-sizing: border-box;
 }
 
+/* Social media ikoner responsiv */
 .social-icon {
   width: 30px;
   height: 30px;

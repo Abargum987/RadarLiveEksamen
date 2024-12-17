@@ -6,6 +6,7 @@
     font-weight: bold;
 }
 
+/* Baggrundsfarve */
 body {
     background-image: linear-gradient(#16262e 7%, #3a4851);
     height: 100%;
@@ -15,6 +16,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Header */
 header {
     width: 100%;
     padding: 1rem 0;          /* Giver lidt luft omkring logoet */
@@ -28,31 +30,14 @@ header {
     flex-direction: column;
 }
 
-.burger-menu {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .burger {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
-  }
-
-main{
-    flex: 1;
-}
-
+  /* logo */
 .logo {
     height: 50px;             /* Justér højden efter behov */
     width: auto;              /* Bevarer logoets proportioner */
     margin-bottom: 2rem;
 }
 
+/* Menubar i header */
 nav .nav-menu {
     list-style: none;            /* Fjerner punktopstilling */
     padding: 0;
@@ -74,6 +59,7 @@ nav .nav-menu li a:hover {
     color: #0cf;              /* Ændrer farve ved hover (justér farven efter behov) */
 }
 
+/* Søgefunktion */
 .search-container {
     margin-top: 2rem;             /* Afstand mellem menuen og søgefeltet */
     display: flex;
@@ -112,6 +98,7 @@ nav .nav-menu li a:hover {
     height: 15px;
 }
 
+/* Box for hele event */
 .event-container {
     max-width: 1250px;
     margin: 0 auto;
@@ -129,6 +116,7 @@ nav .nav-menu li a:hover {
     position: relative;
 }
 
+/* Overskrift til events */
 .event-container h1.overskrift {
     font-size: 40px;
     text-align: center;
@@ -137,6 +125,7 @@ nav .nav-menu li a:hover {
     margin-top: 200px;
 }
 
+/* Koncerter og events */
 .event {
     display: flex;
     box-shadow: 0 4px 16px -8px #0cf;
@@ -219,13 +208,14 @@ nav .nav-menu li a:hover {
     transform-origin: center;
 }
 
-.køb{
+/* Køb knappen og billet */
+.køb {
     margin-left: 900px;
     margin-bottom: 45px;
     margin-top: -60px;
 }
 
-.billetter{
+.billetter {
     padding: 6px 45px;
     background-color: #3a4851;
     color: #0cf;
@@ -236,10 +226,11 @@ nav .nav-menu li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.billetter:hover{
+.billetter:hover {
     background-color: #fff;
 }
 
+/* Billeder i eventbar */
 .gbillede, .gbillede2 {
     width: 11%;
     object-fit: cover;
@@ -250,14 +241,7 @@ nav .nav-menu li a:hover {
     transition: transform 0.3s ease;
 }
 
-.event-container2 h1.overskrift2 {
-    font-size: 40px;
-    text-align: center;
-    border-bottom: 1px solid #fff;
-    color: #0cf;
-    margin-top: 200px;
-}
-
+/* Koncert og event nr2 */
 .event2 {
     display: flex;
     box-shadow: 0 4px 16px -8px #0cf;
@@ -339,6 +323,7 @@ nav .nav-menu li a:hover {
     margin-right: -5px;
 }
 
+/* Køb knappen og billet2 */
 .køb2{
     margin-left: 900px;
     margin-bottom: 45px;
@@ -360,6 +345,7 @@ nav .nav-menu li a:hover {
     background-color: #fff;
 }
 
+/* Footer */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -371,11 +357,13 @@ nav .nav-menu li a:hover {
     margin-top: 50px;
   }
   
+  /* Kontakt information */
   .footer-left, .footer-right {
     display: flex;
     flex-direction: column;
   }
   
+  /* logo og kontakt information i footer */
   .footer-left .logo img {
     width: 120px;
     margin-bottom: 10px;
@@ -392,6 +380,7 @@ nav .nav-menu li a:hover {
     margin-left: 5px;
   }
   
+  /* Nyhedsbrev og tilmed */
   .newsletter {
     display: flex;
     flex-direction: column;
@@ -449,6 +438,7 @@ nav .nav-menu li a:hover {
     text-align: center;
   }
   
+  /* social media i footer */
   .social-media-icons {
     display: flex;
     gap: 25px;
@@ -475,13 +465,14 @@ nav .nav-menu li a:hover {
   }
 
   /* Mobil Iphone 12 Resonsive */
-/* header */
 @media screen and (max-width: 390px) {
     
+    /* Header responsiv */
     .header{
         padding: 0.5rem;
       }
       
+    /* Burgermenu responsiv */
       .burger-menu {
         display: block;
         cursor: pointer;
@@ -511,6 +502,7 @@ nav .nav-menu li a:hover {
       transform: translateY(-8px) rotate(-45deg);
     }
     
+    /* Menu i burgermenu */
     .nav-menu {
     position: fixed;
     left: -100%;
@@ -542,10 +534,12 @@ nav .nav-menu li a:hover {
       left: 0;
     }
     
+    /* Logo responsiv */
       .logo {
     margin-left: -192px;
     }
     
+    /* Søgefunktion responsiv */
     .search-container {
     justify-content: center;
     margin-left: 360px;
@@ -564,6 +558,7 @@ nav .nav-menu li a:hover {
       font-size: 0.8rem;
     }
 
+    /* Box for hele event responsiv */
     .event-container {
         max-width: 1250px;
         margin: 0 auto;
@@ -575,6 +570,7 @@ nav .nav-menu li a:hover {
         margin-top: -65px;
     }
     
+    /* Overskrift til events responsiv */
     .event-container h1.overskrift {
         font-size: 40px;
         text-align: center;
@@ -583,6 +579,7 @@ nav .nav-menu li a:hover {
         margin-top: 200px;
     }
     
+    /* Koncerter og events responsiv */
     .event {
         display: flex;
         box-shadow: 0 4px 16px -8px #0cf;
@@ -668,6 +665,7 @@ nav .nav-menu li a:hover {
         transform-origin: center;
     }
     
+    /* Køb knappen og billet responsiv */
     .køb{
         margin-left: 300px;
         margin-bottom: 45px;
@@ -685,10 +683,12 @@ nav .nav-menu li a:hover {
         transition: background-color 0.3s ease;
     }
     
+    /* Fjernet billeder af artister */
     .gbillede, .gbillede2 {
         display: none;
     }
     
+    /* Koncert og event nr2 responsiv */
     .event2 {
         display: flex;
         box-shadow: 0 4px 16px -8px #0cf;
@@ -773,6 +773,7 @@ nav .nav-menu li a:hover {
         transform-origin: center;
     }
     
+    /* Køb knappen og billet2 responsiv */
     .køb2{
         margin-left: 300px;
         margin-bottom: 45px;
@@ -795,6 +796,7 @@ nav .nav-menu li a:hover {
     display: none;
   }
   
+  /* Nyhedsbrev responsiv */
   .newsletter {
     display: flex;
     flex-direction: column;
@@ -837,6 +839,7 @@ nav .nav-menu li a:hover {
     box-sizing: border-box;
   }
   
+  /* Social media ikoner responsiv */
   .social-icon {
     width: 30px;
     height: 30px;
