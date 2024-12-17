@@ -6,6 +6,10 @@
     font-weight: bold;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Header */
 header {
     width: 100%;
@@ -270,6 +274,11 @@ footer {
 /* Mobil Iphone 12 Resonsive */
 @media screen and (max-width: 390px) {
   
+  /* Undgår scrolling */
+  body {
+    overflow: hidden;
+  }
+
   /* Header responsiv */
   header{
     padding: 0.5rem;
