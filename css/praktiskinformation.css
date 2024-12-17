@@ -719,11 +719,11 @@ margin-top: -32px;
 
 /* Justering af boksen responsiv */
 .box {
-  width: 88%; /* Bokse fylder hele skærmbredden */
+  width: 90%; /* Bokse fylder hele skærmbredden */
   height: auto; /* Dynamisk højde baseret på indhold */
   min-height: 110px;
   margin-top: 100px;
-  margin-left: -55px;
+  margin-left: 5px;
 
 }
 
@@ -760,7 +760,7 @@ margin-top: -32px;
       padding: 10px;
       height: auto;
       width: 320px;
-      margin-left: 1px;
+      margin-left: 30px;
   }
 
   /* Justering af boks2 responsiv */
@@ -782,7 +782,7 @@ margin-top: -32px;
       width: 100%;
       height: auto;
       margin-left: 20px;
-      margin-top: 20px;
+      margin-top: 30px;
   }
 
   .box-content3 h2 {
@@ -799,7 +799,7 @@ margin-top: -32px;
     height: auto; /* Dynamisk højde baseret på indhold */
     min-height: 110px;
     margin-top: -25px;
-    margin-left: -55px;
+    margin-left: 5px;
   }
 
   .box-image4 {
