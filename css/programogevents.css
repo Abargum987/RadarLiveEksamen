@@ -129,7 +129,6 @@ nav .nav-menu li a:hover {
 .event {
     display: flex;
     box-shadow: 0 4px 16px -8px #0cf;
-    display: flex;
     border-radius: 8px;
     margin: 15px;
     cursor: pointer;
